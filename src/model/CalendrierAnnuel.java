@@ -74,5 +74,13 @@ class CalendrierAnnuel {
             }
             jours[jour] = false;
         }
+
+        public String toString() {
+            String res = nom + " : ";
+            for(int i = 0; i < jours.length; i++) {
+                res += jours[i] ? "O" : "X";
+            }
+            return res;
+        }
     }
 }
